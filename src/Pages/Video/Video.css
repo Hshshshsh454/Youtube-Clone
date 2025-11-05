@@ -1,0 +1,30 @@
+.play-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.play-container .left-sidebar {
+  flex: 0 0 200px;
+}
+
+.play-container .PlayVideo {
+  flex: 1;
+}
+@media (max-width: 900px) {
+  .play-container {
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .play-container .left-sidebar {
+    display: none;
+  }
+
+  .play-container .PlayVideo {
+    flex: none;
+    width: 100%;
+  }
+}
